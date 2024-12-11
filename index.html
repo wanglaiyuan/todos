@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my responsive page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "microsoft yahei";
+        }
+        #top{
+          
+            background-color:#212529;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            padding:0 50px;
+            line-height: 50px;
+        }
+       #top ul{
+            display: flex;
+            list-style-type: none;
+
+
+        }
+        #top li{
+            margin-right: 10px;
+            color:#aaa;
+        }
+        #main{
+            background-color:#212529;
+            padding:0 50px;
+            display: flex;
+            align-items: center;
+        }
+        #main-left h2{
+            font-size: 40px;
+            color:#fff;
+            font-weight: normal;
+
+        }
+        #main-left h2 span{
+
+            color: #ffc107;
+        }
+        #main-left p{
+            
+            color:#fff;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #main-left button{
+            background-color: #0d6efd;
+            border: none;
+            color:#fff;
+            padding:15px;
+            font-size:20px;
+            margin-bottom: 20px;
+        }
+        #main img{
+            width:20%;
+            margin-left: auto;
+        }
+        #newsletter{
+
+            background-color: #0d6efd;
+            padding:0 50px;
+            display: flex;
+            margin-bottom:40px;
+            align-items: center; 
+        }
+        #newsletter form {
+            display: flex; 
+            width: 100%; 
+        }
+        #newsletter input {
+            flex: 1; 
+            margin-right: 0;
+            border-right: 0;
+        }
+        #newsletter button {
+            flex-basis: 30%; 
+            border-left: 0; 
+            background-color: #212529;
+            color: #fff;
+        }
+        #input{
+            width: 70%;
+        }
+        #newsletter input,#newsletter button{
+            line-height: 50px;
+            width:70%
+     
+        }
+        #three {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
+        #three>div {
+            text-align: center;
+            color: #fff;
+            background-color: #212529;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        #mid{
+            background-color: #6c7572 !important;
+        }
+        #left,#right{
+            background-color: #212529;
+        }
+       
+        #left a,#right a{
+            color: #fff;
+            background-color: #0d6efd;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+
+        }
+           
+        #mid a{
+            color: #fff; 
+            background-color: #212529; 
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #left,#mid{
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+        
+        
+        @media(max-width: 768px){
+
+            #main{
+                flex-direction: column;
+            }
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                flex-direction: column;
+            }
+            #main-left{
+                text-align: center;
+            }
+            #top li{
+                line-height: 30px;
+            }
+            #three{
+                flex-direction: column;
+            }
+            #three div a {
+                width: auto;
+                
+            }
+            #left,#mid{
+                margin-right: 50px;
+                margin-bottom: 30px;
+            }
+            #newsletter form {
+                flex-direction: column; 
+            }
+
+            #newsletter input, #newsletter button {
+                width: 100%; 
+                margin-right: 0; 
+                margin-bottom: 10px;
+            }
+        
+           
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>
+            组长：王来原
+        </h2>
+        
+        <ul>
+            <li>张佳佳</li>
+            <li>成丽</li>
+            <li>李昂阳</li>
+            <li>袁雯岐</li>
+        </ul>
+        
+        
+        
+        
+
+
+    </div>
+
+    <div id="main">
+
+        <div id="main-left">
+            <h2>2022级 <span> 电子商务1班</span> </h2>
+            <p>
+                网页设计实践作业
+            </p>
+            <button>start enrollment</button>
+            
+
+
+        </div>
+        <img src="https://img.tukuppt.com/ad_preview/00/18/69/PSDrmu49vk.jpg!/both/260x600" alt="">
+
+
+    </div>
+    <div id="newsletter">
+        <h2>Sign in for our newsletter</h2>
+        <form action="#">
+            <input type="email" placeholder="Enter email here" required>
+            <button type="submit">Button</button>
+        </form>
+        <div id="three">
+        </div>
+    </div>
+    
+        </div>
+        <div id="three">
+            <div id="left">
+                <h2>
+                    virtual
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente, magni eaque ad quaerat laborum?
+                </p>
+                <a href="#">read more</a>
+        
+            </div>
+            <div id="mid">
+                <h2>
+                    Hybird
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, reiciendis possimus? Eum nihil reiciendis quidem?
+                </p>
+                <a href="#">read more</a>
+            </div>
+            <div id="right">
+                <h2>
+                    In person
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae sit error, omnis blanditiis fugiat delectus?
+                </p>
+                <a href="#">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html> 
